@@ -1,0 +1,66 @@
+/* === Modern Comprehensive CSS Reset (A11y-friendly) === */
+
+/* 1) Box sizing & margin baseline */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+/* 2) Core text & layout */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3) Headings/paragraph rhythm (เริ่มจากศูนย์) */
+h1,h2,h3,h4,h5,h6,p,figure,blockquote,dl,dd { margin: 0; }
+
+/* 4) Lists (ต้องการจุด/ตัวเลข ค่อยใส่เอง) */
+ul,ol { list-style: none; padding: 0; }
+
+/* 5) Media elements */
+img,picture,video,canvas,svg { display: block; max-width: 100%; height: auto; }
+svg { fill: currentColor; }
+
+/* 6) Forms */
+input,button,textarea,select { font: inherit; color: inherit; letter-spacing: inherit; }
+button,[type="button"],[type="reset"],[type="submit"] {
+  appearance: none; -webkit-appearance: none;
+  background: none; border: none; padding: 0;
+}
+textarea { resize: vertical; }
+::placeholder { opacity: 1; color: inherit; }
+
+/* 7) Links */
+a { color: inherit; text-decoration: underline; text-decoration-skip-ink: auto; }
+
+/* 8) Tables */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 9) Focus (ไม่ตัด outline เพื่อ a11y) */
+:focus { outline: 2px solid; outline-offset: 2px; }
+:focus:not(:focus-visible) { outline: none; }
+
+/* 10) Hidden & dialog */
+[hidden] { display: none !important; }
+dialog:not([open]) { display: none; }
+
+/* 11) Misc */
+abbr[title] { text-decoration: underline dotted; }
+hr { height: 0; border: 0; border-top: 1px solid; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; } sup { top: -0.5em; }
+
+/* 12) Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 13) Smooth scroll forคีย์บอร์ด */
+html:focus-within { scroll-behavior: smooth; }
