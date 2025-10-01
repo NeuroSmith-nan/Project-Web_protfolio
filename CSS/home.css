@@ -4,18 +4,18 @@
   border: 1px solid black;
   width: 40%;
   height: 600px;
-  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
 .card-image-home{
-  border: 1px solid black;
-  width: 300px;
+  border: 5px solid rgb(255, 255, 255);
+  width: 20rem;
   height: 400px;
   float: right;
+  margin-left: 5px;
   margin-right: 10px;
-  margin-left: 3px;
-  margin-top: 100px;
   
 }
 
@@ -32,7 +32,7 @@
 .text-home  .text-up-home{
   border: 1px solid black;
   width: 100%;
-  height: 60%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,8 +55,8 @@
   height: 25%;
 }
 
-/* my-media */
-.text-up-home .my-media{
+/* my-social */
+.text-up-home .my-social{
   border: 1px solid black;
   width: 100%;
   height: 25%;
@@ -66,7 +66,7 @@
 .text-home .text-down-home{
   border: 1px solid black;
   width: 100%;
-  height: 40%;
+  height: 35%;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -76,8 +76,9 @@
 /* my-resume */
 .text-down-home .my-resume{
   border: 1px solid black;
-  width: 40%;
-  height: 50%;
+  width: 20vw;
+  height: 15vh;
+  display: block;
   
 }
 
@@ -92,11 +93,11 @@
 
 .card-image-about{
   border: 1px solid black;
-  width: 300px;
+  width: 20rem;
   height: 400px;
   float: left;
   margin-left: 10px;
-  margin-right: 3px;
+  margin-right: 5px;
 
   
 }
@@ -160,7 +161,7 @@
   width: 98%;
   height: 70%;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-template-rows: 120% 120%;
   padding: 10px;
   row-gap: 15px;
