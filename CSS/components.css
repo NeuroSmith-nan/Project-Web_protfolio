@@ -98,6 +98,7 @@
 }
 
 /* ------------------------(Home)----------------------------- */
+/* ----------(Image)---------- */
 .card-image-home{
   background-image: url(../Image/96517.jpg);
   background-size: cover;
@@ -111,6 +112,7 @@
   transition: 1s;
 }
 
+/* ----------(Text)---------- */
 /* -------Up------- */
 /* my-name */
 .text-up-home .my-name{
@@ -173,4 +175,22 @@
 
 .my-resume a{
   text-decoration: none;
+}
+
+/* -----------------------(About)----------------------------- */
+/* ----------(Text)---------- */
+
+
+/* ----------(Image)---------- */
+.card-image-about{
+  background-image: url(../Image/IMG_0262.JPG);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-image-about:hover{
+  transform: scale(0.95);
+  transition: 1s;
 }
